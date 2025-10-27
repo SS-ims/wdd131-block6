@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Color Palette */
+:root {
+    --silver: #c1c2c2ff;
+    --dark-goldenrod: rgb(153, 184, 17);
+    --dark-moss-green: #49540aff;
+    --persian-orange: rgb(250, 234, 145);
+    --dark-green: rgb(2, 51, 5);
+}
+body {
+    display: grid;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+
+}
+main {
+    display:flex;
+    max-width: 840px;
+}
+
+span#course-title {
+    display: block;
+}
+span h1{
+    background-color: var(--dark-green);
+    color: var(--dark-goldenrod);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    padding: 0.9em;
+    text-align: center;
+    max-width: 840px;
+}
+span nav ul {
+    list-style: none;
+    text-decoration: none;
+    background-color: var(--dark-goldenrod);
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    padding: 0.5em;
+    margin-bottom: 10px;
+    max-width: 840px;
+}
+span nav ul li a {
+    text-decoration: none;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+span nav ul li a:hover {
+    color: var(--dark-green);
+    text-decoration: underline;
+}
+h1{
+    font-family: 'Arial Narrow', sans-serif;
+    font-style: italic;
+}
+h1 span{
+    color: var(--persian-orange);
+}
+.card{
+    background-color: var(--persian-orange);
+
+    border: 1px var(--dark-green) solid;
+    border-radius: 0.5em;
+}
+.card h3{
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px solid var(--dark-green);
+}
+.card p{
+    font-size: smaller;
+    padding: 0.4em;
+}
+.content{
+    display: flex;
+    text-align: justify;
+    gap: 2em;
+    line-height: 1.5em
+}
+.content img{
+    border: 1px solid var(--dark-green);
+    border-radius: 5%;
+    height: auto;
+    width: 90px;
+    margin: 5px;
+}
+.location-details{
+    display: flex;
+    text-align: justify;
+    gap: 2em;
+    line-height: 1.5em
+    
+}
+.location-details img{
+    border: 1px solid var(--dark-green);
+    border-radius: 5%;
+    height: auto;
+    width: 150px;
+    margin: 5px;
+}
+.card{
+    flex: 1 2 70%;
+    margin: 5px;
+    background-color: var(--persian-orange);
+    
+    border: 1px var(--dark-green) solid;
+    border-radius: 0.5em;
+
+}
+.card ul {
+    margin-top: 4em;
+
+}
+.card ul li{
+    
+    flex: 1;
+    list-style: none;
+    text-anchor: middle;
+    list-style-position: inside;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+.card ul li a {
+
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--dark-green);
+}
+h2{
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--dark-green);
+    color: var(--dark-goldenrod);
+}
+footer{
+    background-color: var(--dark-green);
+    padding: 10px;
+    color: var(--persian-orange);
+    line-height: 1.5rem;
+    max-width: 840px;
+    text-align: center;
+
+}
+
+main > .card:first-child {
+    flex: 3;
+}
+main > .card:last-child {
+    flex: 2;
+}
