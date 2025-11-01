@@ -15,6 +15,7 @@ body {
     display: grid;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
+    background-color: var(--persian-orange); 
 
 }
 main {
@@ -28,7 +29,7 @@ span#course-title {
 span h1{
     background-color: var(--dark-green);
     color: var(--dark-goldenrod);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Saira' 'Ubuntu', sans-serif;
     font-size: 1.2em;
     padding: 0.9em;
     text-align: center;
@@ -62,8 +63,7 @@ h1 span{
     color: var(--persian-orange);
 }
 .card{
-    background-color: var(--persian-orange);
-
+    background-color: white;
     border: 1px var(--dark-green) solid;
     border-radius: 0.5em;
 }
@@ -84,12 +84,13 @@ h1 span{
     line-height: 1.5em
 }
 .content img{
-    border: 1px solid var(--dark-green);
+    border: 1px solid  rgba(0, 255, 255, 0.05);
     border-radius: 5%;
     height: auto;
     width: 90px;
     margin: 5px;
 }
+
 .location-details{
     display: flex;
     text-align: justify;
@@ -107,7 +108,6 @@ h1 span{
 .card{
     flex: 1 2 70%;
     margin: 5px;
-    background-color: var(--persian-orange);
     
     border: 1px var(--dark-green) solid;
     border-radius: 0.5em;
