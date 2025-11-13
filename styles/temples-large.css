@@ -15,13 +15,16 @@
    .navigation{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
     max-width: none;
+    padding: 1rem 0;
    }
    .navigation li{
-    display: block;
-    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
    .divider{
     display: grid;

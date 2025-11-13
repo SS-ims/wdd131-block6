@@ -35,26 +35,30 @@ header{
     content: "⚡";
 }
 .navigation {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
     max-width: 500px;
     list-style: none;
     color: #ffffff;
+    padding: 1rem 0;
 }
 .navigation li {
     display: none;
+    width: 100%;
 }
 .navigation.open li {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 .navigation a {
-
     display: block;
     text-align: center;
-    text-decoration:none;
+    text-decoration: none;
     color: #ffffff;
-
+    padding: 0.5rem 1rem;
+    width: 100%;
 }
 .navigation a:hover {
     border: 1px;
@@ -63,11 +67,9 @@ header{
 
 }
 .active::before{
-    content: "♦";
+    content: "♦ ";
     color: yellow;
-    position: relative;
-    left: -1rem;
-    bottom: -1.6rem;
+    margin-right: 3px;
 }
 h1{
     text-align: left;
