@@ -34,6 +34,11 @@ header{
 #menu-button.open::before{
     content: "⚡";
 }
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .navigation {
     display: flex;
     flex-direction: column;
